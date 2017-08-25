@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='renderer' content='webkit'/>
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'>
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-capable\' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/sdk/bmob-min.js"></script>
+
+    <title> 后台管理系统</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <span class="left"> 后台管理中心</span>
+
+        <ul class="nav" id="nav">
+            <li class="active"> 系统配置</li>
+            <li>密码修改</li>
+        </ul>
+        <span class="right"><a href="login.html">退出登录</a></span>
+    </div>
+    <div>
+
+        <div class="cnt-right">
+            <div id="homeInfo">
+                <lable><span>*</span> 主页链接：</lable>
+                <input type="text" id="url" class="url" placeholder=""/>
+                <div class="btn">
+
+                    <input type="text" id="add" value="保存" placeholder="" readonly />
+                </div>
+            </div>
+            <div id="pwdInfo" style="display: none">
+                <div>
+                    <lable>用户名称：</lable>
+                    <input type="text" id="username" class="url" readonly/>
+                </div>
+                <div style="margin-top: 20px">
+                    <lable>用户密码：</lable>
+                    <input type="text" id="newPwd" class="url" placeholder="输入您的新密码" style="font-size: 14px;text-indent: 10px"/>
+                </div>
+                <div class="btn">
+
+                    <input type="text" id="update" value="修改" placeholder="" readonly/>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+<script src="../js/index.js"></script>
+</html>
